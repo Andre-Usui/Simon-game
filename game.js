@@ -57,14 +57,20 @@ var j;
 var i;
 var started = false;
 
-//
-
 $(document).keypress(function() {
     if (!started) {
         startGame();
         started = true;
     }
-  });
+});
+
+$(".white").on("click", () =>{
+    if(!started) {
+        fade($(".white"));
+        startGame();
+        started = true;
+    }    
+});
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -235,22 +241,13 @@ async function gameOver() {
 
 
   // fim da function startGame
-    
-
-            
-
-    
-
-  
-    
-
+ 
 // async e awaits e promisses for the win! jQuery
 // escrevo uma função que aguardará o click em um dos botões; 
 // a função retornará um valor. 
 // $( "ivd" ).promise().done(function() { que retornará o resultado e executará.
 // ou acerto ou erro. if?
 
- 
 
     
 /*    IMPORTANTE
@@ -269,7 +266,6 @@ pressKey();*/
     // definir se continua ou gameover
     // gameover = resetar os sequences, mudar h1 para Game Over
     // gameover = desativar os botões e acionar o pressKey()
-
 
 /*
 Possíveis aprimoramentos. 

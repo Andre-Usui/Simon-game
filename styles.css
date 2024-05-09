@@ -5,7 +5,6 @@ body {
 #andre-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 0.5rem;
-  margin:  5%;
   color: #FEF2BF;
 }
 
@@ -35,6 +34,19 @@ body {
 .game-over {
   background-color: red;
   opacity: 0.8;
+}
+
+.white {
+  height: 33px;
+  width: 100px;
+  border: 10px solid black;
+  border-radius: 20%;
+  display: inline-block;
+  background-color: #FEF2BF;
+  color: black;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.5rem;
+  margin:  5%;
 }
 
 .red {
